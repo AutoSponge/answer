@@ -1,0 +1,29 @@
+{
+  "name": "answer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:js": "node node_modules/argg *.test.js",
+    "lint": "node_modules/.bin/jshint --reporter node_modules/jshint-stylish/stylish.js *.js",
+    "cover": "istanbul cover node_modules/argg *.test.js",
+    "test": "npm run lint && npm run test:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AutoSponge/answer"
+  },
+  "author": "Paul Grenier <pgrenier@gmail.com> (http://autosponge.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AutoSponge/answer/issues"
+  },
+  "homepage": "https://github.com/AutoSponge/answer",
+  "devDependencies": {
+    "argg": "0.0.1",
+    "istanbul": "^0.3.13",
+    "jshint": "^2.7.0",
+    "jshint-stylish": "^1.0.1",
+    "tape": "^4.0.0"
+  }
+}
